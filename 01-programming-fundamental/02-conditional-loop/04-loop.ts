@@ -1,5 +1,5 @@
 for (let counter = 0; counter < 100; counter++) {
-    console.log("Hello");
+  console.log("Hello");
 }
 
 // for(variable counter; loop CSSConditionRule; increment) {code to be executed}
@@ -26,8 +26,41 @@ for (let counter = 0; counter < 100; counter++) {
 /* -------------------------------------------------------------------------- */
 /*                                 WHILE LOOP                                 */
 /* -------------------------------------------------------------------------- */
+// let counter = 0;
+
+// while (counter < 1) {
+// console.log("Hello");
+// counter++;
+// }
+
+// LOOP 1
+// counter = 0
+// counter < 1 => 0 < 1 = true => kode di dalam loop dijalankan (console.log("Hello")) 1
+// counter = counter + 1 => 0 + 1 = 1
+
+// LOOP 2
+// counter = 1
+// counter < 1 => 1 < 1 = false => loop berhenti.
 
 /* -------------------------------------------------------------------------- */
 /*                                DO WHILE LOOP                               */
 /* -------------------------------------------------------------------------- */
+let newCounter = 0;
 
+do {
+  console.log("Hello");
+  newCounter++;
+} while (newCounter < 1);
+
+/* ------------------------- WHILE VS DO WHILE LOOP ------------------------- */
+let whileCounter = 0;
+while (whileCounter > 0) {
+  console.log("WHILE!");
+  whileCounter++;
+}
+
+let doWhileCounter = 0;
+do {
+  console.log("DO WHILE!");
+  whileCounter++;
+} while (doWhileCounter > 0);

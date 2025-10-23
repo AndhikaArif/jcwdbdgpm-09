@@ -1,3 +1,13 @@
+interface IProduct {
+  name: string;
+  price: number;
+}
+
+interface ICart {
+  product: IProduct;
+  quantity: number;
+}
+
 class Product {
   name: string;
   price: number;
@@ -8,10 +18,42 @@ class Product {
   }
 }
 
-const sunlight = new Product("Sunlight", 4000);
-const apple = new Product("Apple", 28000);
-const banana = new Product("Banana", 15000);
-const chocolate = new Product("Chocolate", 20000);
+class Transaction {
+  products: ICart[];
+  total: number;
+
+  constructor() {
+    this.products = [];
+    this.total = 0;
+  }
+
+  addToCart(product: IProduct, quantity: number) {
+    this.products.push({ product, quantity });
+    return `${quantity} x ${product.name} added to cart`;
+  }
+
+  showTotal() {
+    this.total = 0;
+    this.total = this.products.reduce((acc, curr) => {
+      return curr.product.price * curr.quantity + acc;
+    }, 0);
+    return `Total price is: Rp. ${this.total}`;
+  }
+}
+
+const apple = new Product("Apple", 30_000);
+const banana = new Product("Banana", 15_000);
+const chocolate = new Product("Chocolate", 20_000);
+console.log(apple);
+console.log(banana);
+console.log(chocolate);
+
+const transaction1 = new Transaction();
+transaction1.addToCart(chocolate, 2);
+transaction1.addToCart(apple, 20);
+transaction1.addToCart(banana, 1);
+transaction1.addToCart(apple, 10);
+console.log(transaction1.showTotal());
 
 /* -------------------------------------------------------------------------- */
 /*                                    NOTES                                   */
@@ -39,10 +81,14 @@ console.log(totalScores);
 // curr = 9 (index 2)
 // return acc + curr => 9 + 3 = 12
 
-const product = [
+// Reduce complex
+const products = [
   { product: { name: "chocolate", price: 10 }, quantity: 5 },
   { product: { name: "banana", price: 50 }, quantity: 1 },
-  { product: { name: "chocolate", price: 25 }, quantity: 10 },
+  { product: { name: "apple", price: 25 }, quantity: 10 },
 ];
+const total = products.reduce((acc, curr) => {
+  return curr.product.price * curr.quantity + acc;
+}, 0);
 
-const total = 0;
+console.log(total);

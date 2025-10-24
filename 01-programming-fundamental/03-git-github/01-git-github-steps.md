@@ -18,7 +18,7 @@
 3. 'git commit -m "[PESAN COMMIT]"' : Untuk upload file yg sudah di 'add' tadi & tambah komen untuk memberitahu rekan lainnya apa yang kamu ubah
 4. 'git log' : Untuk memeriksa perubahan apa saja yang kamu lakukan yang sudah kamu commit
 
-## Memasukkan Git Repository Local k Git Repository Remote (GitHub)
+## Memasukkan Git Repository Local ke Git Repository Remote (GitHub)
 
 1. Buat folder/repository Github terlebih dahulu
 2. 'git remote add origin [URL]'
@@ -27,6 +27,6 @@
 
 ## Menambahkan File ke dalam repository Local & Remote
 
-1. 'git add.'
+1. 'git add .'
 2. 'git commit -m "[PESAN COMMIT]"
 3. 'git push'

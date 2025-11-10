@@ -1,0 +1,22 @@
+[
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3N5z02PI6gVOCl-CL03VlycjvNcmwJb33Xw&s",
+    "created": 1761728560311,
+    "___class": "articles",
+    "ownerId": null,
+    "title": "Beautiful Sunset",
+    "updated": 1761728580585,
+    "content": "LOREM IPSUM DOLOR SIT AMET, CONSECTETUR",
+    "objectId": "4958115D-F678-46C8-A8FE-AB8E36AF5D0B"
+  },
+  {
+    "image": "https://media.posterstore.com/site_images/6859980977e838b230d3644d_1453571233_11636-5.jpg?auto=compress%2Cformat&fit=max&w=3840",
+    "created": 1761728424117,
+    "___class": "articles",
+    "ownerId": null,
+    "title": "Living in The Moment",
+    "updated": 1761728507865,
+    "content": "lorem ipsum dolor sit amet, consectetur",
+    "objectId": "61D005F8-83E7-41F1-BD20-AFB1595126BA"
+  }
+]
